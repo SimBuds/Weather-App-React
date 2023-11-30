@@ -1,0 +1,109 @@
+.weather-app {
+    background: linear-gradient(to bottom, #333333, #111111); 
+    min-height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+  
+.weather-app-content {
+    border: 1px solid #444;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    padding: 30px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    margin: 50px;
+    width: 80%;
+}
+  
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.search-box .form-control { 
+    margin-bottom: 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+}
+  
+.search-box .btn {
+    white-space: nowrap;
+    background-color: #555;
+    color: #fff;
+    border: none;
+}
+  
+.weather-info {
+    border-radius: 15px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    padding: 30px;
+    margin-top: 30px;  
+}
+  
+.forecast {
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.forecast-title {
+    margin-bottom: 25px;
+}
+  
+.weather-condition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.weather-icon, .forecast-icon {
+    width: 100px;
+    height: auto;
+    margin-right: 25px;
+}
+  
+.temperature-description {
+    text-align: center;
+}
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pr-md-4 {
+        padding-right: 1.5rem;
+    }
+    .pl-md-4 {
+        padding-left: 1.5rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: stretch; 
+    }
+    
+    .search-box .form-control,
+    .search-box .btn {
+        width: 100%;
+    }
+    
+    .weather-condition, .forecast-item {
+        flex-direction: row;
+        justify-content: start;
+    }
+    
+    .forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .forecast-icon {
+        margin-right: 15px;
+    }
+}
